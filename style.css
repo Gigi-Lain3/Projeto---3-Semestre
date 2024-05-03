@@ -10,7 +10,7 @@
 
 /* Estilos para o corpo da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: black;
     color: white;
     margin: 0;
@@ -95,14 +95,14 @@ section.ambiente{
 }
 
 .slide-box img{
-    width: 100%;
+    width: 90%;
 }
 
 /* Estilos dos naveadores das imagens */
 .nav-manual, .nav-auto{
    position: absolute;
    width: 100%;
-   margin-top: 57%;
+   margin-top: 51%;
    display: flex;
    justify-content: center;
 }
