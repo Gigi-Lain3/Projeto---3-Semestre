@@ -8,17 +8,9 @@
     margin-right: 20px;
 }
 
-/* Estilos para o corpo da página */
-body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: black;
-    color: white;
-    margin: 0;
-}
-
 /* Estilos para o cabeçalho */
 header {
-    background-color: #8B4513;
+    background-color: #000000; /* Preto */
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -61,10 +53,33 @@ header {
 /* Estilos para as seções */
 section {
     margin-bottom: 30px;
-    padding: 0;
+    padding: 20px;
     box-sizing: border-box;
     margin: 0;
 }
+
+/* Estilos para a seção "Sobre" */
+#sobre {
+    background-color:#aeaeae; /* Cinza */
+    border-radius: 10px;
+}
+
+
+/* Estilos para a seção "Agendamento" */
+#agendamento {
+    background-color: #000000; /* Preto */
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px; /* Adicionando margem inferior */
+}
+
+
+/* Estilos para a seção "Localização" */
+#localizacao {
+    background-color: #aeaeae; /* Cinza */
+    border-radius: 10px;
+}
+
 
 /* Estilo da imagens do local */
 section.ambiente{
@@ -79,7 +94,6 @@ section.ambiente{
     width:400%;
     height: auto;
     display: flex;
-
 }
 
 .ambiente-content input{
@@ -98,19 +112,19 @@ section.ambiente{
     width: 90%;
 }
 
-/* Estilos dos naveadores das imagens */
+/* Estilos dos navegadores das imagens */
 .nav-manual, .nav-auto{
-   position: absolute;
-   width: 100%;
-   margin-top: 51%;
-   display: flex;
-   justify-content: center;
+    position: absolute;
+    width: 100%;
+    margin-top: 49.4%;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-manual .manual-btn, .nav-auto div{
-    border: 1px solid white;
+    border: 1px solid black;
     padding: 10px;
-    border-radius: 50%;
+    border-radius: 60%;
     cursor: pointer;
     transition: 1s;
 }
@@ -120,17 +134,19 @@ section.ambiente{
 }
 
 .nav-manual .manual-btn:hover{
-   background-color: white;
+    background-color: black;
 }
 
 #radio1:checked ~ .nav-auto .auto-btn1{
-    background-color: white;
+    background-color: black;
 }
+
 #radio2:checked ~ .nav-auto .auto-btn2{
-    background-color: white;
+    background-color: black;
 }
+
 #radio3:checked ~ .nav-auto .auto-btn3{
-    background-color: white;
+    background-color: black;
 }
 
 #radio1:checked ~ .primeiro{
@@ -163,7 +179,9 @@ main {
 .container .slider img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
+
 
 /* Estilos para os botões de navegação do slider */
 .prev,
@@ -173,12 +191,15 @@ main {
     transform: translateY(-50%);
     background: rgba(0, 0, 0, 0.5);
     border: none;
-    color: white;
+    color: black;
     padding: 10px;
     font-size: 20px;
     cursor: pointer;
     z-index: 1;
+    border-radius: 5px;
+    margin-bottom: 20px; 
 }
+
 
 .prev {
     left: 0;
@@ -194,6 +215,7 @@ main {
     height: 300px;
     margin: 0 auto;
     display: block;
+    border-radius: 10px;
 }
 
 /* Estilos para o ícone do WhatsApp */
@@ -204,3 +226,37 @@ main {
     z-index: 9999;
 }
 
+/* Estilos para o rodapé */
+footer {
+    background-color: #000000; /* Preto */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+ /* Estilos para a tabela de preços */
+        .precos-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .precos-table th {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        .precos-table td {
+            background-color: #dcdcdc;
+            color: black;
+            font-size: 16px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .precos-table tr:nth-child(even) {
+            background-color: #cccccc;
+        }
